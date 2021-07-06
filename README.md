@@ -2,6 +2,8 @@
 Projeto de Blog de Noticias Em Wordpress, esse projeto destina-se ao desafio proposto pela
 
 # [WordPress](https://br.wordpress.org/) [![Github Badge](https://img.shields.io/badge/Wordpress-version%205.7-blue)](https://br.wordpress.org/)
+![screenshot](https://user-images.githubusercontent.com/55859434/124622524-92b53b00-de51-11eb-9850-7c830e213021.png)
+
 
 # Theme Features :wrench:
 O Seguinte Tema possui o seguintes suporte de tema
@@ -12,12 +14,15 @@ O Seguinte Tema possui o seguintes suporte de tema
 - add_theme_support( 'align-wide' );  :heavy_check_mark:
 - add_theme_support( 'responsive-embeds' );  :heavy_check_mark:
 - add_theme_support( 'custom-logo' );  :heavy_check_mark:
+- add_theme_support( 'widgets' );  :heavy_check_mark:
+- add_theme_support( 'custumizer' );  :heavy_check_mark:
 
 # Detalhes do Tema
 - Responsivo :computer: :iphone:
-- Poder trocar a cor do Tema em Painel->Aparência->Personalizar->Sessão->Copyright Settings
+- Poder trocar a cor do Tema em Painel->Aparência->Personalizar->Sessão->Exibição de Notícias
 - Poder escolher a categoria da sessão na home Painel->Aparência->Personalizar->Sessão->Exibição de Notícias
 - Posts Relacionais 
+- Posts comentário 
 - Randon Posts
 - Template de types Posts diferentes basico
 - Tema desenvolvido do Zero sem auxilio de templates de prontos ou pages builds
@@ -33,6 +38,7 @@ o posionamento padrões de Posts, na parte superior da Home
 - [x] Implementar algumas coisas a mais footer
 - [x] Diferenciar melhor os Post Format
 - [x] Arrumar o Menu para versão mobile
+- [x] Implementar página 404
 
 
 # Tecnologias :pushpin:
@@ -53,7 +59,7 @@ https://github.com/Renaldwilliam/Blog-WordPress.git
 - Coloque o Tema na hospedagem ou xampp 
 - Configure o Wordpress
 - Crie as Categorie
-- Escolha a cor do Tema Painel->Aparência->Personalizar->Sessão->Copyright Settings
+- Escolha a cor do Tema Painel->Aparência->Personalizar->Sessão->Exibição de Notícias
 - Entre no Painel->Aparência->Personalizar->Sessão->Exibição de Notícias escolha o posicionamento das noticias e acordo com a categoria desejada
 
 # Dev
