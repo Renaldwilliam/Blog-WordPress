@@ -473,6 +473,10 @@ p.titulo-section-categoria {
   width: 30%;
 }
 
+#post-individual img {
+  width: 100%;
+}
+
 .post-relacionais {
   display: flex;
   margin-top: 1rem;
