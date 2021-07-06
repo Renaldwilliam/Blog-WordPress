@@ -17,7 +17,7 @@ O Seguinte Tema possui o seguintes suporte de tema
 
 # Detalhes do Tema
 - Responsivo :computer: :iphone:
-- Poder trocar a cor do Tema em Painel->Aparência->Personalizar->Sessão->Copyright Settings
+- Poder trocar a cor do Tema em Painel->Aparência->Personalizar->Sessão->Exibição de Notícias
 - Poder escolher a categoria da sessão na home Painel->Aparência->Personalizar->Sessão->Exibição de Notícias
 - Posts Relacionais 
 - Randon Posts
@@ -55,7 +55,7 @@ https://github.com/Renaldwilliam/Blog-WordPress.git
 - Coloque o Tema na hospedagem ou xampp 
 - Configure o Wordpress
 - Crie as Categorie
-- Escolha a cor do Tema Painel->Aparência->Personalizar->Sessão->Copyright Settings
+- Escolha a cor do Tema Painel->Aparência->Personalizar->Sessão->Exibição de Notícias
 - Entre no Painel->Aparência->Personalizar->Sessão->Exibição de Notícias escolha o posicionamento das noticias e acordo com a categoria desejada
 
 # Dev
