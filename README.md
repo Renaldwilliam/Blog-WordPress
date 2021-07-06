@@ -40,6 +40,7 @@ o posionamento padrões de Posts, na parte superior da Home
 - [x] Arrumar o Menu para versão mobile
 - [x] Implementar página 404
 - [x] Implementar página no Painel adm para anuncio
+- [x] Ajustar campo de pesquisa
 
 
 # Tecnologias :pushpin:
