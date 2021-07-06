@@ -14,6 +14,8 @@ O Seguinte Tema possui o seguintes suporte de tema
 - add_theme_support( 'align-wide' );  :heavy_check_mark:
 - add_theme_support( 'responsive-embeds' );  :heavy_check_mark:
 - add_theme_support( 'custom-logo' );  :heavy_check_mark:
+- add_theme_support( 'widgets' );  :heavy_check_mark:
+- add_theme_support( 'custumizer' );  :heavy_check_mark:
 
 # Detalhes do Tema
 - Responsivo :computer: :iphone:
