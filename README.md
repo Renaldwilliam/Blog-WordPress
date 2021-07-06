@@ -39,6 +39,7 @@ o posionamento padrões de Posts, na parte superior da Home
 - [x] Diferenciar melhor os Post Format
 - [x] Arrumar o Menu para versão mobile
 - [x] Implementar página 404
+- [x] Implementar página no Painel adm para anuncio
 
 
 # Tecnologias :pushpin:
