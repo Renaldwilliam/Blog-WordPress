@@ -57,10 +57,10 @@ Faça o clone do projeto para sua máquina.
 https://github.com/Renaldwilliam/Blog-WordPress.git
 ```
 ## Step 2:
-- Defina a Pagina Home como principal Painel->Configurações->Leitura->
-Sua página inicial exibe-> Umapágina estática (selecionar abaixo)->Pagina Inicial->Home :pushpin::pushpin::pushpin::pushpin::pushpin::pushpin:
 - Coloque o Tema na hospedagem ou xampp 
 - Configure o Wordpress
+- Defina a Pagina Home como principal Painel->Configurações->Leitura->
+Sua página inicial exibe-> Umapágina estática (selecionar abaixo)->Pagina Inicial->Home :pushpin::pushpin::pushpin::pushpin::pushpin::pushpin:
 - Crie as Categorie
 - Escolha a cor do Tema Painel->Aparência->Personalizar->Sessão->Exibição de Notícias
 - Entre no Painel->Aparência->Personalizar->Sessão->Exibição de Notícias escolha o posicionamento das noticias e acordo com a categoria desejada
