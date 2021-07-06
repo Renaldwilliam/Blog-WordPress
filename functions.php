@@ -102,6 +102,27 @@ function criarPaginasadroes(){
 
 }
 
+function CreateCategory(){
+
+    $categorias = array();
+
+    $my_cat_2 = array('cat_name' => 'Sessão Top', 
+    'category_description' => 'Topo',
+    'category_nicename' => 'topo',
+    'category_parent' => '');
+
+    
+    array_push( 
+        $categorias, 
+        $my_cat_2,
+    ); 
+    
+    for( $i = 0; $i < sizeof( $categorias ); $i++ ) {
+        wp_insert_category( $categorias[$i] );
+    }
+
+}
+
 
 /* Configurações do tema Themes Suports e Menus */
 function cgnConfigLoad() {
@@ -230,10 +251,12 @@ function cgn_sidebars() {
     );
  }
 
+
  // engatando minhas configs de load scripts no hooks do wordpress
 add_action( 'after_setup_theme', 'cgnLoadScripts' );
 add_action( 'after_setup_theme', 'criarPaginasadroes' );
 add_action( 'after_setup_theme', 'cgnConfigLoad', 0 );
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length' );
 add_action( 'widgets_init', 'cgn_sidebars' );
+add_action( 'admin_init','CreateCategory' );
 

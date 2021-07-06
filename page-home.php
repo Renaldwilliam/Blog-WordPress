@@ -5,8 +5,12 @@ $categoriaPrimerioSec = get_theme_mod( 'set_noticia_primeira_sec');
 $categoriaSegundaSec = get_theme_mod( 'set_noticia_segunda_sec');
 $categoriaSegundoCaroul = get_theme_mod( 'set_noticia_carousel_seg');
 
-
+$categoriaPrimerioCaroul == "" ? $categoriaPrimerioCaroul = 'topo' : $categoriaPrimerioCaroul = $categoriaPrimerioCaroul;
+$categoriaPrimerioSec == "" ? $categoriaPrimerioSec = 'topo' : $categoriaPrimerioSec = $categoriaPrimerioSec;
+$categoriaSegundaSec== "" ? $categoriaSegundaSec = 'topo' : $categoriaSegundaSec = $categoriaSegundaSec;
+$categoriaSegundoCaroul == "" ? $categoriaSegundoCaroul = 'topo' :  $categoriaSegundoCaroul = $categoriaSegundoCaroul;
 ?>
+
 <?php get_header(); ?>
   <div class="container">
 

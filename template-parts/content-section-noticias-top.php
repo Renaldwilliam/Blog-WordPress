@@ -7,9 +7,13 @@
     'category_name' => 'topo',
   );
   $noticiasTopo = new WP_Query(  $argsGetNoticias );
+
   $arrayNoticias = $noticiasTopo->posts; // pegando só os posts para distribuir
 ?>
 
+<?php if( sizeof( $arrayNoticias ) < 3 ): ?>
+  <h3>é necessario 3 Posts na categoria Sessão Top para habilitar essa parte</h3>
+<?php else: ?>
 <div class="n-principal" style="background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<?php echo get_the_post_thumbnail_url( $arrayNoticias[0]->ID )?>') no-repeat center/cover;">
   <?php  $type = get_post_format( $arrayNoticias[0]->ID );?>
   <div class="icons-format">
@@ -30,8 +34,8 @@
         </a>
         <p><?php echo get_the_date('', $arrayNoticias[0]->ID ) ?></p>
       </div>
-    </div>
   </div>
+</div>
 
 <div class="n-lateral d-none-sm">
     <?php for( $i = 1;  $i <= 2 ; $i++ ): ?>
@@ -60,3 +64,5 @@
       </div>
     <?php endfor; ?>
 </div>
+<?php endif;?>
+

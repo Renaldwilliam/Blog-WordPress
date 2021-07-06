@@ -1,4 +1,4 @@
-<?
+<?php
 $categoria = $args['categoria']; /*pegando args que passei na pagina home */
 
 $argsGetNoticiaMaior = array(
@@ -42,7 +42,9 @@ $noticiasMais = new WP_Query( $argsGetNoticiaMais );
         <p><?php the_excerpt(35); ?></p>
       </a>
     </div>
-  <?php endwhile; wp_reset_postdata(); endif; ?>
+  <?php endwhile; wp_reset_postdata(); else: ?>
+    <p>Não a Posts para essa sessão</p>
+  <?php endif;?>  
 </div>
 
 
@@ -68,6 +70,8 @@ $noticiasMais = new WP_Query( $argsGetNoticiaMais );
           <small><?= get_the_date(); ?></small>
       </div>
     </li>
-  <?php endwhile; wp_reset_postdata(); endif; ?>
+  <?php endwhile; wp_reset_postdata(); else: ?>
+    <p>Não a Posts para essa sessão</p>
+  <?php endif;?>  
   </ul>
 </div>

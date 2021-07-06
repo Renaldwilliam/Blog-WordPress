@@ -642,6 +642,19 @@ aside.box-noticias-lateral img {
   color: white;
 }
 
+/**=================== PAGE PERSON  CSS ======================== */
+#page-person {
+  display: flex;
+}
+
+.conteudo-page-person {
+  margin-right: 1rem;
+  width: 70%;
+}
+
+#page-person .sidebar {
+  width: 30%;
+}
 /*===================  FOOTER CSS ======================== */
 footer#footer {
   background: var(--footer);

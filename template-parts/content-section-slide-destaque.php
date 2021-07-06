@@ -38,5 +38,7 @@ $noticiasSlide = new WP_Query(  $argsGetNoticias );
           </div>
         </div>
     </div>
-    <?php endwhile; wp_reset_postdata(); endif; ?>
+    <?php endwhile; wp_reset_postdata(); else: ?>
+      <h1>Não ha Posts</h1>
+    <?php endif; ?>
 </div>

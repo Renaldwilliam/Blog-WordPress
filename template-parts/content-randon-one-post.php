@@ -15,5 +15,7 @@ $query = new WP_Query( $args );
           <?php the_post_thumbnail('', 'full'); ?>
           <p class=""><?php the_title(); ?></p>
       </a>
-  <?php endwhile; wp_reset_postdata(); endif; ?>
+  <?php endwhile; wp_reset_postdata(); else: ?>
+    <p>Não a Posts para essa sessão</p>
+  <?php endif;?>
 </div>
