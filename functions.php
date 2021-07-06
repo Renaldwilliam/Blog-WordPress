@@ -175,6 +175,9 @@ function iconsFormatPost($type) {
     }
 }
 
+
+
+
 /**widgets */
 function cgn_sidebars() {
     register_sidebar(
@@ -252,7 +255,49 @@ function cgn_sidebars() {
  }
 
 
+class WP_painel_anuncio {
+    public static function init() {
+        add_action( 'admin_enqueue_scripts', array( __CLASS__, 'adminAssets' ) );
+        add_action( 'admin_menu', array( __CLASS__, 'adminMenu' ) );
+    }
+ 
+    public static function adminMenu() {
+        add_menu_page(
+            __( 'Anuncios', 'wppainel_anuncios' ),
+            __( 'Anuncios', 'wppainel_anuncios' ),
+            'manage_options',
+            'wppainel_anuncios',
+            array( __CLASS__, 'menuPage' ),
+            'dashicons-megaphone',
+            75
+        );
+    }
+ 
+    public static function menuPage() {
+        if ( is_file( plugin_dir_path( __FILE__ ) . '/painel-admin/pages/anuncio.php' ) ) {
+            include_once plugin_dir_path( __FILE__ ) . '/painel-admin/pages/anuncio.php';
+        }
+    }
+ 
+    public static function getSettings() {
+        return get_option( 'wppainel_anuncios' );
+    }
+ 
+    public static function adminAssets() {
+        if ( isset( $_GET['page'] ) && ! empty( $_GET['page'] ) && 'wppainel_anuncios' === $_GET['page'] ) {
+            
+        }
+    }
+}
+
+
+WP_painel_anuncio::init();
+WP_painel_anuncio::getSettings();
+
  // engatando minhas configs de load scripts no hooks do wordpress
+
+
+
 add_action( 'after_setup_theme', 'cgnLoadScripts' );
 add_action( 'after_setup_theme', 'criarPaginasadroes' );
 add_action( 'after_setup_theme', 'cgnConfigLoad', 0 );
