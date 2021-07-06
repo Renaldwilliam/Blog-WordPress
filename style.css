@@ -1,0 +1,900 @@
+/*
+Theme Name: Prova CGN
+Theme URI: https://localhost/
+Author: Renald William Faustino Espindola
+Author URI: https://localhost/autor
+Description: Tema criado para avaliação, propostar pela equipe de desenvolimento da CDN
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.0
+Requires at least: 5.7
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ProvaCGN
+*/
+
+/* Fontes usadas no Projeto */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+
+/* Cores padrões*/
+:root {
+  --red: #e83f5b;
+  --blue: #5965e0;
+  --green: #4cd62b;
+  --principal: #ea0a3e;
+  --white: #fff;
+  --blue-dark: #4953b8;
+  --black: #000000;
+  --strong-gray: #2c2e32;
+  --light-gray: #ccc;
+  --blue-twitter: #2aa9e0;
+  --blue-facebook: #4080ff;
+  --red-youtube: #c5463d;
+  --red-insta: #bf3583;
+  --body-color: hsl(0, 0%, 98%);
+  --footer: #222222;
+  font-size: 100%; /* 16px */
+}
+
+/**=================== BASE ======================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 1rem 'DM Sans', sans-serif;
+  background: var(--body-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font: 700 1.87rem 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+/**===================  CSS aux ======================== */
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.aling-items-center {
+  align-items: center;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+/**=================== Header CSS ======================== */
+.logo-ads {
+  margin-top: 1.5rem;
+}
+.title-site {
+  display: flex;
+}
+
+.logo img {
+  width: 14rem;
+  object-fit: contain;
+}
+
+.title-site h1 {
+  font-size: 3rem;
+}
+
+.title-init {
+  color: var(--red);
+}
+.title-end {
+  color: var(--blue-facebook);
+}
+
+.ads-top img {
+  height: 100%;
+  width: 100%;
+}
+
+#menu-top {
+  display: flex;
+  justify-content: center;
+  background: var(--principal);
+  height: 3rem;
+  align-items: center;
+}
+
+#menu-top nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+#menu-top nav ul li {
+  margin: 0 1.5rem 0 0;
+  font-size: 1.8rem;
+}
+
+#menu-top nav ul li a {
+  color: white;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.main-nav a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/**=================== Noticias TOPO CSS ======================== */
+
+#noticias-topo {
+  display: flex;
+  height: 33rem;
+  margin-top: 2rem;
+}
+
+.n-principal {
+  height: 100%;
+  width: 70%;
+
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+
+  padding: 2rem;
+  margin-right: 1rem;
+}
+
+.n-principal .icons-format {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.descricao .categoria {
+  background: var(--red);
+  padding: 0.3rem;
+
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+}
+
+p.titulo-section-categoria {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.descricao .categoria a {
+  color: var(--white);
+}
+
+.descricao .titulo a h1 {
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+.n-principal:hover i {
+  transition: font-size 0.15s;
+  font-size: 3.5rem;
+}
+
+.descricao .more {
+  display: flex;
+  color: var(--white);
+}
+
+.descricao .more a {
+  margin-right: 1rem;
+  color: var(--white);
+}
+
+.n-principal .capa {
+  width: 100%;
+}
+
+.n-lateral {
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.n-lateral .box-noticia {
+  position: relative;
+}
+
+.box-noticia:hover i {
+  font-size: 2.5rem;
+}
+
+.n-lateral .icons-format {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  color: var(--white);
+  font-size: 1rem;
+}
+
+.n-lateral div:first-of-type {
+  margin-bottom: 0.5rem;
+}
+
+.box-noticia {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  height: 100%;
+  width: 100%;
+
+  padding: 2rem;
+}
+
+.box-noticia .descricao .titulo h1 {
+  font-size: 1rem;
+}
+
+/**=================== Noticias Slide TOPO CSS ======================== */
+
+#noticias-slide-top {
+  display: flex;
+
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.box-noticias-slide-top {
+  display: flex;
+  align-items: flex-end;
+
+  padding: 1rem;
+  position: relative;
+
+  height: 15rem;
+}
+
+.box-noticias-slide-top:hover i {
+  font-size: 2.5rem;
+}
+
+.capa-noticia-maior:hover i {
+  font-size: 5.5rem;
+}
+
+.box-noticias-slide-top .icons-format {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+
+  color: var(--white);
+  font-size: 1.5rem;
+}
+#noticias-slide-top .owl-nav {
+  font-size: 3rem;
+  display: flex;
+  right: 0;
+  position: absolute;
+  top: -31%;
+}
+
+#noticias-slide-top .owl-nav button {
+  background: var(--principal);
+  width: 3rem;
+}
+
+#noticias-slide-top .owl-nav button:first-child {
+  margin-right: 1rem;
+}
+
+.title-categoria {
+  margin-top: 2rem;
+
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--white);
+
+  border-bottom: 3px solid var(--principal);
+}
+
+.title-categoria p {
+  background: var(--principal);
+  padding: 0.8rem;
+  display: inline-block;
+  border-radius: 6px 6px 0 0;
+
+  font-size: 1.3rem;
+}
+
+.box-noticias-slide-top .descricao .titulo a h1 {
+  font-size: 1.3rem;
+}
+
+.box-noticias-slide-top .descricao .more a {
+  margin: 0;
+}
+/**=================== destaques CSS ======================== */
+
+#destaques {
+  display: flex;
+  margin-top: 1rem;
+}
+
+#destaques .news {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 1rem;
+}
+
+#destaques .sidebar {
+  width: 30%;
+  height: 100%;
+}
+
+.news .noticia-maior {
+  width: 50%;
+}
+.capa-noticia-maior img {
+  height: 17rem;
+  object-fit: cover;
+}
+
+.capa-noticia-maior {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.capa-noticia-maior i {
+  position: absolute;
+  font-size: 2rem;
+  color: white;
+  transition: font-size 0.15s;
+}
+
+.capa-noticia-maior i:hover {
+  transition: font-size 0.15s;
+  font-size: 5rem;
+}
+
+.news .list-noticias {
+  width: 50%;
+  padding: 0 1rem 0 1rem;
+}
+
+.box-foto-texto {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.box-foto-texto img {
+  width: 7rem;
+  height: 7rem;
+  object-fit: cover;
+  margin-right: 0.8rem;
+  border-radius: 6px;
+}
+
+.postado-por {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-noticias ul {
+  list-style: none;
+  margin: 0;
+}
+
+.box-image-list {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+}
+
+.box-image-list:hover {
+  font-size: 3rem;
+  transition: font-size 0.15s;
+}
+
+.box-image-list i {
+  padding: 0.3rem;
+  position: absolute;
+}
+.carousel-noticias {
+  width: 100%;
+}
+
+#carousel-no-meio-das-noticias .owl-nav {
+  font-size: 3rem;
+  display: flex;
+  right: 0;
+  position: absolute;
+  top: -31%;
+}
+
+#carousel-no-meio-das-noticias .owl-carousel {
+  margin-top: 1rem;
+}
+
+#carousel-no-meio-das-noticias .owl-nav button {
+  background: var(--principal);
+  width: 3rem;
+}
+
+#carousel-no-meio-das-noticias .owl-nav button:first-child {
+  margin-right: 1rem;
+}
+
+/*===================  SINGLE CSS ======================== */
+#post-individual {
+  display: flex;
+  margin-top: 2rem;
+}
+
+#post-individual .corpo {
+  width: 70%;
+  margin-right: 1rem;
+}
+
+#post-individual .sidebar {
+  width: 30%;
+}
+
+.post-relacionais {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.box-posts-relacionais {
+  width: 33.3%;
+  padding: 0 0.8rem 0 0;
+}
+
+.box-posts-relacionais img {
+  height: 10rem;
+  object-fit: cover;
+}
+
+/* Noticia format Video fiz só essas alterações porem da pra milhoes de coisas*/
+.format-video h1 {
+  margin-bottom: 1rem;
+  color: var(--red);
+}
+
+.format-video .conteudo {
+  text-align: justify;
+  border: 3px solid var(--blue);
+  padding: 0.8rem;
+  background: var(--black);
+  color: var(--white);
+}
+
+.format-video .conteudo ul {
+  margin-left: 2rem;
+}
+.format-video .meta-info {
+  margin: 1rem 0 1rem 0;
+}
+
+/* Noticia format Audio fiz só essas alterações porem da pra milhoes de coisas*/
+.format-audio h1 {
+  margin-bottom: 1rem;
+  color: var(--blue);
+}
+
+.format-audio .conteudo {
+  text-align: justify;
+  border: 3px solid var(--black);
+  padding: 0.8rem;
+  background: var(--red);
+  color: var(--white);
+}
+
+.format-audio .conteudo ul {
+  margin-left: 2rem;
+}
+.format-audio .conteudo ol {
+  margin-left: 2rem;
+}
+.format-audio .meta-info {
+  margin: 1rem 0 1rem 0;
+}
+
+/* Noticia format Padrão fiz só essas alterações porem da pra milhoes de coisas*/
+
+.format-standard h1 {
+  margin-bottom: 1rem;
+  color: var(--green);
+}
+
+.format-standard .conteudo {
+  text-align: justify;
+  border: 3px solid var(--black);
+  padding: 0.8rem;
+  background: var(--strong-gray);
+  color: var(--white);
+}
+
+.format-standard .conteudo ul {
+  margin-left: 2rem;
+}
+.format-standard .conteudo ol {
+  margin-left: 2rem;
+}
+.format-standard .meta-info {
+  margin: 1rem 0 1rem 0;
+}
+
+/*===================  SIDEBAR CSS ======================== */
+.randon-noticias {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  width: 100%;
+}
+
+.box-noticias-lateral .descricao-noticias-lateral {
+  position: absolute;
+  bottom: 10%;
+  padding: 0.8rem;
+}
+
+aside.box-noticias-lateral:hover i {
+  font-size: 3rem;
+  transition: font-size 0.15s;
+}
+
+aside.box-noticias-lateral i {
+  position: absolute;
+  top: 5%;
+  right: 15%;
+
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.input-pesquisa {
+  background: var(--principal);
+  padding: 1rem;
+}
+
+.input-pesquisa i {
+  margin-right: 1rem;
+}
+
+.input-pesquisa input {
+  height: 2rem;
+  width: 80%;
+  border-radius: 6px;
+  border: none;
+}
+
+div.imagem {
+  height: 10rem;
+  width: 100%;
+}
+
+div.imagem-full {
+  height: 20rem;
+  width: 100%;
+}
+
+aside.imagem-full {
+  width: 97% !important;
+  height: 100%;
+}
+
+aside.box-noticias-lateral {
+  width: 48%;
+  position: relative;
+  margin-right: 0.3rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+aside.box-noticias-lateral a {
+  color: var(--white);
+  font-size: 1.3rem;
+
+  font-weight: bold;
+}
+
+aside.box-noticias-lateral img {
+  height: 10rem;
+  object-fit: cover;
+}
+.descricao-noticias-lateral p {
+  color: white;
+}
+
+/*===================  FOOTER CSS ======================== */
+footer#footer {
+  background: var(--footer);
+  color: var(--white);
+
+  margin-top: 1rem;
+}
+
+footer#footer > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer#footer .logo-footer {
+  width: 33.3%;
+
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer#footer .footer-recent-posts {
+  padding: 1rem;
+
+  width: 33.3%;
+}
+
+footer#footer .footer-tags-randon {
+  padding: 1rem;
+  width: 33.3%;
+}
+
+footer#footer ul {
+  list-style: none;
+}
+
+footer#footer ul li img {
+  height: 5rem;
+  width: 8rem;
+  border-radius: 6px;
+
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+footer#footer ul li a {
+  display: flex;
+  align-items: center;
+
+  margin: 1rem 1rem 1rem 1rem;
+
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--white);
+}
+
+footer#footer .imagem-randon-post a {
+  display: flex;
+  position: relative;
+}
+
+footer#footer .imagem-randon-post img {
+  height: 18rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+footer#footer .imagem-randon-post a p {
+  position: absolute;
+
+  width: 100%;
+  bottom: 0;
+
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: #303435de;
+  padding: 0.8rem;
+}
+
+footer#footer .footer-tags-randon h2 {
+  margin-bottom: 1rem;
+}
+footer#footer .newslater {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 1rem 0;
+}
+
+footer#footer .newslater input {
+  height: 3rem;
+  width: 100%;
+}
+
+footer#footer .newslater p {
+  background: var(--red);
+  height: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem;
+
+  cursor: pointer;
+}
+
+ul#list-recent-post a p {
+  font-size: 1.1rem;
+}
+
+/*===================  PAGE CATEGORIE CSS ======================== */
+
+.arquive-title {
+  margin-top: 1rem;
+}
+
+#pagina-categoria {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.posts-categoria {
+  width: 70%;
+  margin-right: 2rem;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  width: 30%;
+}
+
+.box-noticias-pagina-categoria {
+  width: 50%;
+}
+
+.more-categoria {
+  margin: 0 0 1rem 0;
+}
+.more-categoria h1 {
+  margin: 0;
+}
+.box-image-categoria {
+  padding: 0 0.8rem 0 0;
+  display: inline-block;
+}
+
+.box-image-categoria img {
+  height: 15rem;
+
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .d-none-sm {
+    display: none;
+  }
+
+  .container {
+    border-bottom: 2px solid var(--black);
+  }
+
+  footer#footer .footer-tags-randon {
+    width: 100%;
+  }
+
+  footer#footer .footer-recent-posts {
+    width: 100%;
+  }
+
+  footer#footer .logo-footer {
+    width: 100%;
+  }
+  .n-principal {
+    width: 100%;
+    margin: 0;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .space-between {
+    justify-content: center;
+  }
+
+  .news .noticia-maior {
+    width: 100%;
+  }
+
+  .news .list-noticias {
+    width: 100%;
+  }
+
+  #destaques .news {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .news .list-noticias {
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  #post-individual .corpo {
+    width: 100%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1480px) {
+  div.imagem {
+    height: 14rem;
+    width: 100%;
+  }
+
+  #noticias-topo {
+    height: 25rem;
+  }
+  aside.box-noticias-lateral a {
+    color: var(--white);
+    font-size: 1.2rem;
+
+    font-weight: bold;
+  }
+  .title-categoria {
+    font-size: 1.3rem;
+  }
+
+  .box-image-list a p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  div.imagem-full {
+    height: 15rem;
+  }
+
+  .main-nav a {
+    font-size: 1.1rem;
+  }
+
+  ul#list-recent-post a p {
+    font-size: 1rem;
+  }
+
+  .footer#footer ul li a {
+    font-size: 1rem;
+  }
+}
