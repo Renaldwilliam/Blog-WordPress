@@ -139,7 +139,6 @@ a {
 }
 
 img {
-  width: 100%;
   height: auto;
 }
 
@@ -368,6 +367,7 @@ p.titulo-section-categoria {
 .capa-noticia-maior img {
   height: 17rem;
   object-fit: cover;
+  width: 100%;
 }
 
 .capa-noticia-maior {
@@ -485,6 +485,7 @@ p.titulo-section-categoria {
 
 .box-posts-relacionais img {
   height: 10rem;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -694,7 +695,7 @@ footer#footer ul {
 
 footer#footer ul li img {
   height: 5rem;
-  width: 8rem;
+  width: 100%;
   border-radius: 6px;
 
   object-fit: cover;
@@ -863,6 +864,10 @@ ul#list-recent-post a p {
   }
 
   #post-individual .corpo {
+    width: 100%;
+  }
+
+  #post-individual img {
     width: 100%;
   }
 }
