@@ -14,7 +14,7 @@ Text Domain: ProvaCGN
 */
 
 /* Fontes usadas no Projeto */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap");
 
 /* Cores padrões*/
 :root {
@@ -45,13 +45,13 @@ Text Domain: ProvaCGN
 }
 
 body {
-  font: 400 1rem 'DM Sans', sans-serif;
+  font: 400 1rem "DM Sans", sans-serif;
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
 }
 
 h1 {
-  font: 700 1.87rem 'Poppins', sans-serif;
+  font: 700 1.87rem "Poppins", sans-serif;
 }
 
 a {
@@ -821,6 +821,10 @@ ul#list-recent-post a p {
     display: none;
   }
 
+  #noticias-topo {
+    height: 22rem;
+  }
+
   .container {
     border-bottom: 2px solid var(--black);
   }
@@ -836,9 +840,25 @@ ul#list-recent-post a p {
   footer#footer .logo-footer {
     width: 100%;
   }
+
+  .descricao .titulo a h1 {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font: 700 1.3rem "Poppins", sans-serif;
+  }
   .n-principal {
     width: 100%;
     margin: 0;
+  }
+  p.titulo-section-categoria {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .box-noticias-slide-top .descricao .titulo a h1 {
+    font-size: 1rem;
   }
 
   .logo {
