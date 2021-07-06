@@ -2,6 +2,8 @@
 Projeto de Blog de Noticias Em Wordpress, esse projeto destina-se ao desafio proposto pela
 
 # [WordPress](https://br.wordpress.org/) [![Github Badge](https://img.shields.io/badge/Wordpress-version%205.7-blue)](https://br.wordpress.org/)
+![screenshot](https://user-images.githubusercontent.com/55859434/124622524-92b53b00-de51-11eb-9850-7c830e213021.png)
+
 
 # Theme Features :wrench:
 O Seguinte Tema possui o seguintes suporte de tema
