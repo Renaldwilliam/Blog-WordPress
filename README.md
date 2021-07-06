@@ -22,6 +22,7 @@ O Seguinte Tema possui o seguintes suporte de tema
 - Poder trocar a cor do Tema em Painel->Aparência->Personalizar->Sessão->Exibição de Notícias
 - Poder escolher a categoria da sessão na home Painel->Aparência->Personalizar->Sessão->Exibição de Notícias
 - Posts Relacionais 
+- Posts comentário 
 - Randon Posts
 - Template de types Posts diferentes basico
 - Tema desenvolvido do Zero sem auxilio de templates de prontos ou pages builds
@@ -37,6 +38,7 @@ o posionamento padrões de Posts, na parte superior da Home
 - [x] Implementar algumas coisas a mais footer
 - [x] Diferenciar melhor os Post Format
 - [x] Arrumar o Menu para versão mobile
+- [x] Implementar página 404
 
 
 # Tecnologias :pushpin:
